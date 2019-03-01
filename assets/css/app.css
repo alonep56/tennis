@@ -1,0 +1,128 @@
+/* Base Styles */
+
+@media screen and (max-width: 990px) {
+  .logo{
+  display: none;
+  }
+  .message {
+    display: none;
+  }
+  .nav-tennis-li {
+    display: block !important;
+    font-size: 0.8em;
+    margin: 0 1rem;
+  }
+
+}
+@media screen and (max-width: 1700px) {
+  .nav-tennis-li {
+    margin: 0 1rem !important;
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  max-width: 100%;
+  /* max-height: 100vh */
+  font-family: 'Abril Fatface', 'Raleway', sans-serif;
+
+}
+
+
+/* Header Styles */
+
+header {
+  max-width: 100%;
+  height: 8rem;
+  background: #fff;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  z-index: 2;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/* .small {
+  height: 50px;
+}
+
+.small .logo {
+  font-size: 2.6em;
+  margin-top: 5px;
+} */
+
+nav {
+  max-width: 100%;
+
+}
+ nav ul .nav-tennis {
+  /* margin: 0.5rem; */
+  max-width: 100%;
+
+}
+ .nav-tennis-li {
+  list-style: none;
+  display: inline;
+  margin: 0 5rem;
+}
+.nav-tennis-li a {
+  text-decoration:none;
+  color: #de5003;
+  font-weight: 100;
+}
+ul li a:hover {
+
+  text-decoration: underline;
+}
+.message {
+  width: 2%;
+}
+
+
+.logo {
+  max-width: 100%;
+}
+
+/* Transitions */
+
+header, .logo {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main {
+	margin: auto;
+  height: 100vh;
+   max-height: 100%;
+   text-align: center;
+
+
+}
+
+/* Section Styles */
+
+
+
+
+.ground {
+  max-width: 50%;
+  text-align: center;
+  /* padding-top: 8rem; */
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+footer {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  height: 10em;
+  box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  z-index: 2;
+}
