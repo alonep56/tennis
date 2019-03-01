@@ -1,8 +1,23 @@
 /* Base Styles */
 
 @media screen and (max-width: 990px) {
+  header {
+    position: relative;
+  }
   .logo{
   display: none;
+  }
+  .homeQuery {
+    display: inline-block !important;
+    margin: 0 !important;
+    
+  }
+  .logoQuery {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+
   }
   .message {
     display: none;
@@ -12,11 +27,14 @@
     font-size: 0.8em;
     margin: 0 1rem;
   }
+  .title h2 {
+    font-size: 1.5rem !important;
+  }
 
 }
 @media screen and (max-width: 1700px) {
   .nav-tennis-li {
-    margin: 0 1rem !important;
+    margin: 0 0.5rem !important;
   }
 }
 
@@ -67,7 +85,7 @@ nav {
  .nav-tennis-li {
   list-style: none;
   display: inline;
-  margin: 0 5rem;
+  margin: 0 4rem;
 }
 .nav-tennis-li a {
   text-decoration:none;
@@ -104,20 +122,46 @@ main {
 }
 
 /* Section Styles */
+.textTennis {
+  position: relative;
+  padding-top: 2rem;
+}
+.imgTennis {
+  position:absolute;
+  z-index:1;
+  opacity: 0.95;
+}
+.imgTennis:hover {
+  opacity: 0.8;
+}
 
 
-
+.title {
+  position:absolute;
+  margin: auto;
+  z-index:5;
+  font-size: 10rem;
+  color: #fff;
+}
+.title h2 {
+  font-size: 3.5rem;
+  padding-top: 1rem;
+}
 
 .ground {
-  max-width: 50%;
+  max-width: 100%;
   text-align: center;
+  border-radius: 0.5rem;
   /* padding-top: 8rem; */
   /* margin-left: auto;
   margin-right: auto; */
 }
+#canvas {
+  padding-top: 3rem;
+}
 
 footer {
-  position: fixed; bottom: 0; left: 0; right: 0;
+  /* position: fixed; bottom: 0; left: 0; right: 0; */
   height: 10em;
   box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.1);
   background: #fff;

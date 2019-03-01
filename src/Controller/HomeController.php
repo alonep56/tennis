@@ -26,4 +26,15 @@ Class HomeController extends AbstractController
 
     ]);
   }
+
+  /**
+* @Route("/games", name="games")
+* @return Response
+*/
+  public function games(): Response {
+
+      return $this->render('pages/games.html.twig', [
+
+      ]);
+  }
 }

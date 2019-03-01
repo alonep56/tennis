@@ -17,10 +17,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="nav-tennis">
-            <li class="nav-tennis-li"><img class="logo" src="{{'/images/hoptennis.png'}}" alt="card-img-top"></li>
+            <li class="nav-tennis-li"><a href="{{ path('home')}}"><img class="logo" src="{{'/images/hoptennis.png'}}" alt="card-img-top"><p class="d-none homeQuery">Accueil</p> </a></li>
             <li class="nav-tennis-li"><img class="message" src="{{'/images/new.svg'}}" alt="">
               <a href="#">
                 Dernier terrain ajouté</a>
@@ -33,33 +32,99 @@
               <a href="#">
                 Message</a>
             </li>
+            <li class="nav-tennis-li"><img class="message" src="{{'/images/console.svg'}}" alt="">
+              <a href="{{ path('games')}}">
+                Jeu</a>
+            </li>
             <li class="nav-tennis-li"><img class="message" src="{{'/images/login.svg'}}" alt="">
               <a href="#">Se connecter</a>
             </li>
           </ul>
 
-      </nav>
-    </header>
-    <main>
-      {% block body %}{% endblock %}
-    </main>
+        </nav>
+        <div class="container d-none logoQuery">
+            <img class="logo2" src="{{'/images/hoptennis.png'}}" alt="card-img-top">
+        </div>
+      </header>
+      <main>
+        {% block body %}{% endblock %}
+      </main>
 
-    <footer>
+      <footer>
+        <div class="container-fluid text-center text-md-left">
 
-      <!-- <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative
-      Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
-      licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
-      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-    </footer>
+          <!-- Grid row -->
+          <div class="row">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
-    {% block javascripts %}
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
 
-      <script src="{{ asset('build/runtime.js') }}"></script>
-      <script src="{{ asset('build/app.js')}}"></script>
-    {% endblock %}
-  </body>
-</html>
+              <!-- Content -->
+              <h5 class="text-uppercase">Footer Content</h5>
+              <p>Here </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">Des question ?</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Contact</a>
+                </li>
+
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">Informations légales</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">conditions d'utilisations</a>
+                </li>
+
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+
+            HOP TENNIS
+        </div>
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+        <!-- <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative
+        Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
+        licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+      </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
+      {% block javascripts %}
+
+        <script src="{{ asset('build/runtime.js') }}"></script>
+        <script src="{{ asset('build/app.js')}}"></script>
+      {% endblock %}
+    </body>
+  </html>
