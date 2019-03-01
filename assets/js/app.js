@@ -138,11 +138,11 @@ window.onload = function(){
     if(winningScreenShowed){
       ctx.fillStyle = 'white';
       if(playerScore == WINNING_SCORE){
-        ctx.fillText('You Won!', 100, 100);
+        ctx.fillText('Bien joué, tu as gagné !', 100, 100);
       }else if(computerScore >= WINNING_SCORE){
-      	ctx.fillText('Computer Won!', W-150, 100);
+      	ctx.fillText('Dommage, tu as perdu !', W-150, 100);
       }
-      ctx.fillText('click to continue', 300, 310);
+      ctx.fillText('Clique pour rejouer', 300, 310);
       return;
     }
     ctx.fillStyle = 'white';

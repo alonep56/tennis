@@ -10,7 +10,7 @@
   .homeQuery {
     display: inline-block !important;
     margin: 0 !important;
-    
+
   }
   .logoQuery {
   display: block !important;
@@ -98,6 +98,9 @@ ul li a:hover {
 }
 .message {
   width: 2%;
+}
+.court {
+  transform: rotate(90deg);
 }
 
 
